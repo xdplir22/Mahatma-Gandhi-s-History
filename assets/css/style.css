@@ -1,0 +1,11 @@
+/* Asterisk wildcard selector to overide default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Header styling */
+.header {
+    background-color: #2e7d32;
+    
+}
