@@ -65,3 +65,21 @@ body {
     text-decoration: underline;
 }
 
+/* Main content styling */
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.home-section,
+.section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #2e7d32;
+}
