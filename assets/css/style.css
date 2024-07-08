@@ -10,28 +10,58 @@
 
 /* General body styling */
 body {
-    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: "Lato", sans-serif;
     background-color: #f5f5f5;
-}
-
-/* Header styling */
-.header {
-    background-color: #77DD77;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
     
 }
 
-.logo {
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
+/* Header styling */
+header {
+    background-color: #77DD77;
+    color: black;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 1000;
+    box-shadow: 0 2px 2px #3a3a3a;   
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+h1{
+    font-family: "Lato", sans-serif; 
+    letter-spacing: 2px;  
+}
+
+
+/* Main Element */
+main{
+    margin-top: 116px;
+}
+
+nav{
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    padding: 0 1rem;
+    display: none;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav{
+    display: block;
+}
+#nav-toggle{
+    display: none;
+}
+.nav-toggle-label{
+    font-size: 2rem;
 }
 
 .logo-container {
@@ -40,53 +70,46 @@ body {
     justify-content: center;
 }
 
-.menu {
-    margin-top: 10px;
-}
+header img{
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+       
+} 
 
-.menu ul {
+#menu {
+    font-size: 110%;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.menu li {
+/*#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}--Deactiveated--*/
+
+#menu li {
     display: inline;
     margin: 0 10px;
+    letter-spacing: 2px; 
 }
 
-.menu a {
-    color: white;
+#menu a{
+    color: #3a3a3a;
     text-decoration: none;
     font-weight: bold;
 }
 
-.menu a:hover {
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/*#menu a:hover {
     text-decoration: underline;
-}
+}--Not working--*/
 
-/* Main content styling */
-main {
-    margin-top: 80px;
-    padding: 20px;
-}
-
-.home-section,
-.section {
-    background-color: white;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.section h2 {
-    color: #2e7d32;
-}
-
-#home{
-    height: 500px;
-    width: 100%;
-    background:url("../images/6333916590_8933a6c742_c.jpg") no-repeat center center/cover ;
-    position: relative;
+main{
+    flex: 1 0 auto;
 }
