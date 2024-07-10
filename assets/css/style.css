@@ -113,3 +113,53 @@ header img{
 main{
     flex: 1 0 auto;
 }
+
+/* Footer styling */
+.footer {
+    background-color: #77DD77;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media query: tablets and larger screens (768px and up) */
+@media screen and (min-width: 768px){
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-left: 3rem;
+        background-color: #77DD77
+        
+        
+    }
+    
+    #menu{
+        display: flex;
+    }
+
+    #menu > li{
+        padding-left: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .nav-toggle-label{
+        display: none;
+    }
+
+    .logo-container{
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    main{
+        margin-top: 104px;
+    }
+
+
+}
