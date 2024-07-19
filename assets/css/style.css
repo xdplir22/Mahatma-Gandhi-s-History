@@ -44,9 +44,15 @@ main{
     margin-top: 116px;
 }
 
+main section{
+    height: 600px;
+    width: 100%;
+    background: url("../images/mahatma_2.webp")  no-repeat center center/cover;
+    }
+
 nav{
     position: absolute;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
     padding: 0 1rem;
